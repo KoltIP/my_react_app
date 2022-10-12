@@ -22,11 +22,11 @@ export function Pet({pet}:PetModel)
                 {pet.name}
             </h1>
 
-            <div style={{display: "flex", marginBottom: "20px", marginLeft: "20px"}} >
+            <div style={{display: "flex", margin: "20px", alignItems: "center"}} >
                 <img width="180" height="250" src={pet.img} alt={pet.description} style={{textAlign:"left", borderRadius:"30px"}}></img>
-                <div style={{textAlign:"right", marginLeft:"30px",  marginRight:"30px", alignItems:"right", alignContent:"right"}}>         {pet.type}          </div>
-                <div style={{textAlign:"right", marginLeft:"30px",  marginRight:"30px", alignItems:"right", alignContent:"right"}}>         {pet.breed}         </div>
-                <div style={{textAlign:"right", marginLeft:"30px",  marginRight:"30px", alignItems:"right", alignContent:"right"}}>         {pet.color}         </div>                
+                {pet.type}
+                {pet.breed}
+                {pet.color}                
             </div>      
         </div>
     )
